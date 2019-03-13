@@ -1,18 +1,3 @@
-# REST风格框架：
-LoadDatax项目是一个基于Spring的符合REST风格的项目，具有MVC分层结构并实现前后端分离。该项目体现了一个具有REST风格项目的基本特征：
-
- - 具有统一响应结构；
- 
- - 前后台数据流转机制(HTTP消息与Java对象的互相转化机制)；
- 
- - 统一的异常处理机制；
- 
- - 参数验证机制；
- 
- - Cors跨域请求机制;
- 
- - 安全(鉴权)机制。
- 
 ##基于该框架
 ##开发了调用Data3.0的调用接口，接口可以传入参数，job为作业名字（必须的参数，不需要带后缀），另一个参数为作业中的动态变量，可以传入多个变量，变量名要跟作业中的一样，如下
  http://ip:8080/datax/xxx?job=teradatatomysql&stable=test，作业中需要${参数名}
@@ -37,4 +22,21 @@ LoadDatax项目是一个基于Spring的符合REST风格的项目，具有MVC分�
          http://ip:8080/LoadDatax/datax/rpcJob?job=teradatatomysql&statis_mon=201812
          
   ####3 通过spring定时任务执行job，该方法需要通过编码实现，在com.df.datax.task.JobTask 自定义自己的实现代码即可      
+
+# REST风格框架：
+LoadDatax项目是一个基于Spring的符合REST风格的项目，具有MVC分层结构并实现前后端分离。该项目体现了一个具有REST风格项目的基本特征：
+
+ - 具有统一响应结构；
+ 
+ - 前后台数据流转机制(HTTP消息与Java对象的互相转化机制)；
+ 
+ - 统一的异常处理机制；
+ 
+ - 参数验证机制；
+ 
+ - Cors跨域请求机制;
+ 
+ - 安全(鉴权)机制。
+ 
+
  
